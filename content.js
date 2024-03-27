@@ -1,9 +1,8 @@
 window.onload = () => {
   var mutationObserver = new MutationObserver(function(mutations){
     mutations.forEach(function(mutation) {
-      if (mutation.target && mutation.target.innerText && mutation.target.innerText.indexOf('Skip Ad') != -1) {
+      if (mutation.target && mutation.target.innerText && mutation.target.innerText.indexOf('Skip') != -1) {
         mutation.target.click();
-        console.log("ad skippped")
       }
     })
   })
